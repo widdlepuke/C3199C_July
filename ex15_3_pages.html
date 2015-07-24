@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Navigations</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="js/jquery.mobile-1.4.5.min.css" />
+	<script src="js/jquery-1.11.3.min.js"></script>
+	<script>
+	$(document).on("mobileinit", function(){
+			$.extend($.mobile,{
+				defaultPageTransition:
+					'none'
+				
+			});
+		});
+	</script>
+	<script src="js/jquery.mobile-1.4.5.min.js"> </script>
+</head>
+<body>
+	<div id="page1" data-role="page">
+		<div data-role="header" data-position="fixed">
+			<h1>Kalamitsi Beach</h1>
+		</div>
+		<div role="main" class="ui-content">
+			<img width="80%" src='images/beach.jpg' >
+				<p>
+				Beach: fine sand <br>
+				Water: clear, calm<br>
+				<br>
+				Kalamitsi beach is a beautiful coved beach about 500 meters long. The village of Kalamitsi has been developed just behind the beach. With beautiful soft sand and calm waters, this is a delight for water sports. One of the best spots for diving in Halkidiki is found here. Kalamitsi has everything to offer from restaurants, beach bars to mini markets and water activities.
+				<p>
+		</div>
+		<div data-role="footer" data-position="fixed" >
+			<h1>You need a break!</h1>
+			<div data-role="navbar">
+			<ul>
+			<li><a href='#page1'  class="ui-btn-active ui-state-persist" >Kalamitsi</a></li>
+			<li><a href='#page2'>Maldives</a></li>
+			<li><a href='#page3'>Santorini</a></li>
+			</ul>
+		</div>
+		</div>
+	</div>
+	
+	<div id="page2" data-role="page" >
+		<div data-role="header" data-position="fixed" >
+			<h1>Maldives Beach</h1>
+		</div>
+		<div role="main" class="ui-content">
+			<img width="80%" src='images/beach2.jpg' >
+				<p>
+				The Maldives is a tropical nation in the Indian Ocean composed of 26 coral atolls, which are made up of hundreds of islands. It’s known for its beaches, blue lagoons and extensive reefs. The capital, Malé, has a busy fish market, restaurants and shops on Majeedhee Magu and 17th-century Hukuru Miskiy (also known as Old Friday Mosque) made of coral stone.
+				<p>
+		</div>
+		<div data-role="footer" data-position="fixed">
+			<h1>You need a break!</h1>
+			<div data-role="navbar">
+			<ul>
+			<li><a href='#page1' >Kalamitsi</a></li>
+			<li><a href='#page2'  class="ui-btn-active ui-state-persist">Maldives</a></li>
+			<li><a href='#page3'>Santorini</a></li>
+			</ul>
+		</div>
+		</div>
+	</div>
+	
+	<div id="page3" data-role="page" >
+		<div data-role="header" data-position="fixed" >
+			<h1>Santorini Beach</h1>
+		</div>
+		<div role="main" class="ui-content">
+			<img width="80%" src='images/beach3.jpg' >
+				<p>
+				Santorini is not known for its beaches. They are good but not great – so don’t be expecting those idyllic stretches of sand you’ve seen in pictures of Greece. (That said, many people love the beaches of Santorini and find their unique sand and natural setting to be more memorable than “just another sandy beach”.)
+
+				Most of Santorini’s beaches are composed of dark volcanic sand that gets searingly hot in the mid-day sun. Beach sandals or water shoes are recommended for getting around on the sand.
+
+				But what the beaches lack in typical sandy splendor they make up for with breathtaking views and scenery. The cliffs that loom around some of the beaches and the nature of the sand itself make a surreal setting for swimming and sunning.
+				<p>
+		</div>
+		<div data-role="footer" data-position="fixed">
+			<h1>You need a break!</h1>
+			<div data-role="navbar">
+			<ul>
+			<li><a href='#page1' >Kalamitsi</a></li>
+			<li><a href='#page2'>Maldives</a></li>
+			<li><a href='#page3'  class="ui-btn-active ui-state-persist">Santorini</a></li>
+			</ul>
+		</div>
+		</div>
+	</div>
+</body>
+</html>
